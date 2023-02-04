@@ -37,11 +37,26 @@ public class PurchaseSteps {
         Thread.sleep(5000); // setelah klik tombol cart maka akan ke delay 5 detik
     }
 
+    @And("User choice two product from the list") //scenario
+    public void choiceBasketTwo() throws InterruptedException { //fungtion
+        LandingPage landingPage = new LandingPage(webDriver); //memanggil class
+        landingPage.clickTsred(); //memanggil salah satu fungsi dlm class td
+        landingPage.clickOnesie(); //memanggil salah satu fungsi dlm class td
+        Thread.sleep(5000); // setelah klik tombol cart maka akan ke delay 5 detik
+    }
+
     @And("User choice 1 product from the list") //scenario
     public void choiceBasketTas() throws InterruptedException { //fungtion
         LandingPage landingPage = new LandingPage(webDriver); //memanggil class
         landingPage.clickJacket(); //memanggil salah satu fungsi dlm class td
         Thread.sleep(5000); // setelah klik tombol cart maka akan ke delay 5 detik
+    }
+
+    @And("User click remove")
+    public void choiceRemove() throws InterruptedException {
+        LandingPage landingPage = new LandingPage(webDriver);
+        landingPage.clickRemove();
+        Thread.sleep(5000);
     }
 
 

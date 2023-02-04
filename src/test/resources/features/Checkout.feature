@@ -8,17 +8,18 @@ Feature: Checkout
     When User input "standard_user" as userName and input "secret_sauce" as password
     # Proses halaman product dan pilih product
     Then User already on landing page
-    And User sort product list by "Price (high to low)"
-    And User choice 2 product from the list
+    And User sort product list by "Name (Z to A)"
+    And User choice two product from the list
     And User click cart
+    And User click remove
     # Proses halaman cart
     Then User already on cart page
-    And User click continue shopping
+    #And User click continue shopping
     # Proses kembali ke halaman produk
-    Then User already on landing page
-    And User choice 1 product from the list
-    And User click cart
-    Then User already on cart page
+    #Then User already on landing page
+    #And User choice 1 product from the list
+    #And User click cart
+    #Then User already on cart page
     And User click checkout
     # Proses halaman checkout
     Then User already on checkout page

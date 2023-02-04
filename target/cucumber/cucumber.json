@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 117273933800,
+              "duration": 47605856799,
               "status": "passed"
             },
             "match": {
@@ -17,11 +17,11 @@
         "line": 5,
         "name": "Normal checkout",
         "description": "",
-        "id": "checkout;normal-checkout",
+        "id": "complete;normal-checkout",
         "after": [
           {
             "result": {
-              "duration": 1654283900,
+              "duration": 7031495900,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3139789200,
+              "duration": 2557191500,
               "status": "passed"
             },
             "comments": [
@@ -52,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 2559280500,
+              "duration": 2383080301,
               "status": "passed"
             },
             "line": 8,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 156753500,
+              "duration": 131221000,
               "status": "passed"
             },
             "comments": [
@@ -92,15 +92,15 @@
           },
           {
             "result": {
-              "duration": 5580702100,
+              "duration": 5790950500,
               "status": "passed"
             },
             "line": 11,
-            "name": "User sort product list by \"Price (high to low)\"",
+            "name": "User sort product list by \"Name (Z to A)\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Price (high to low)",
+                  "val": "Name (Z to A)",
                   "offset": 27
                 }
               ],
@@ -110,19 +110,19 @@
           },
           {
             "result": {
-              "duration": 6073063200,
+              "duration": 5945890699,
               "status": "passed"
             },
             "line": 12,
-            "name": "User choice 2 product from the list",
+            "name": "User choice two product from the list",
             "match": {
-              "location": "PurchaseSteps.choiceBasket()"
+              "location": "PurchaseSteps.choiceBasketTwo()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5105922400,
+              "duration": 5167558300,
               "status": "passed"
             },
             "line": 13,
@@ -134,16 +134,28 @@
           },
           {
             "result": {
-              "duration": 154899300,
+              "duration": 5111661200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click remove",
+            "match": {
+              "location": "PurchaseSteps.choiceRemove()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 107933999,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 14,
+                "line": 15,
                 "value": "# Proses halaman cart"
               }
             ],
-            "line": 15,
+            "line": 16,
             "name": "User already on cart page",
             "match": {
               "location": "CartSteps.verifyCartPage()"
@@ -152,76 +164,36 @@
           },
           {
             "result": {
-              "duration": 5215835100,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User click continue shopping",
-            "match": {
-              "location": "CartSteps.continueShoppingButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 62391700,
+              "duration": 5302171500,
               "status": "passed"
             },
             "comments": [
               {
                 "line": 17,
+                "value": "#And User click continue shopping"
+              },
+              {
+                "line": 18,
                 "value": "# Proses kembali ke halaman produk"
+              },
+              {
+                "line": 19,
+                "value": "#Then User already on landing page"
+              },
+              {
+                "line": 20,
+                "value": "#And User choice 1 product from the list"
+              },
+              {
+                "line": 21,
+                "value": "#And User click cart"
+              },
+              {
+                "line": 22,
+                "value": "#Then User already on cart page"
               }
             ],
-            "line": 18,
-            "name": "User already on landing page",
-            "match": {
-              "location": "PurchaseSteps.verifyLandingPage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5069638500,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User choice 1 product from the list",
-            "match": {
-              "location": "PurchaseSteps.choiceBasketTas()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5093457300,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User click cart",
-            "match": {
-              "location": "PurchaseSteps.cartButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 57006200,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User already on cart page",
-            "match": {
-              "location": "CartSteps.verifyCartPage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5150869100,
-              "status": "passed"
-            },
-            "line": 22,
+            "line": 23,
             "name": "User click checkout",
             "match": {
               "location": "CartSteps.checkoutButton()"
@@ -230,16 +202,16 @@
           },
           {
             "result": {
-              "duration": 5077976300,
+              "duration": 5180337599,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 23,
+                "line": 24,
                 "value": "# Proses halaman checkout"
               }
             ],
-            "line": 24,
+            "line": 25,
             "name": "User already on checkout page",
             "match": {
               "location": "CheckoutSteps.verifyCheckout()"
@@ -248,10 +220,10 @@
           },
           {
             "result": {
-              "duration": 5761976100,
+              "duration": 6093214200,
               "status": "passed"
             },
-            "line": 25,
+            "line": 26,
             "name": "User input \"alia\" as firstName and input \"ulfah\" as lastName and input \"04\" as postalCode",
             "match": {
               "arguments": [
@@ -274,16 +246,16 @@
           },
           {
             "result": {
-              "duration": 5080230800,
+              "duration": 5088774801,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 26,
+                "line": 27,
                 "value": "# Proses halaman overview"
               }
             ],
-            "line": 27,
+            "line": 28,
             "name": "User already on overview page",
             "match": {
               "location": "OverviewSteps.verifyOverview()"
@@ -292,28 +264,52 @@
           },
           {
             "result": {
-              "duration": 5160976900,
+              "duration": 5337432601,
               "status": "passed"
             },
-            "line": 28,
-            "name": "Total seharusnya sesuai dengan ekspektasi",
+            "line": 29,
+            "name": "Total must be match between expect and actual",
             "match": {
               "location": "OverviewSteps.verifyTotal()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5251339201,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User click finish",
+            "match": {
+              "location": "OverviewSteps.choiceFinish()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146470901,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User already on complete page",
+            "match": {
+              "location": "CompleteSteps.verifyCompletePage()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Checkout",
+    "name": "Complete",
     "description": "As a user I want to login website sauce demo",
-    "id": "checkout",
+    "id": "complete",
     "keyword": "Feature",
-    "uri": "features/Overview.feature",
+    "uri": "features/Complete.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@Overview"
+        "name": "@Complete"
       }
     ]
   }

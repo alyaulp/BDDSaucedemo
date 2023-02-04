@@ -37,7 +37,7 @@ public class CheckoutSteps {
     }
 
     @Then("User see error \"(.*)\" on checkout page") //identitas final method
-    public void verifyErrorText(String errortext) throws InterruptedException {
+    public void verifyErrorCheckoutText(String errortext) throws InterruptedException {
         CheckoutPage checkoutPage = new CheckoutPage(webDriver);
         assertEquals(errortext,checkoutPage.verifyErrorText());
         Thread.sleep(5000);

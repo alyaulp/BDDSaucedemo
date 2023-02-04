@@ -1,5 +1,6 @@
 package org.example.pageObject;
 
+import cucumber.api.java.en.And;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,6 +28,11 @@ public class OverviewPage {
     @FindBy(xpath = "//div[@class='summary_total_label']")
     private WebElement total;
 
+    @FindBy(xpath = "//button[@id='finish']")
+    private WebElement btnFinish;
+
+
+
 
     public boolean verifyOverviewPage() {
         title.isDisplayed();
@@ -34,7 +40,7 @@ public class OverviewPage {
     }
 
     public Float Tax() {
-        // Karena tipe data tax di web adalah string kita buat variable dengan tipe string
+        // Karena tipe data tax di web adalah string (" ") kita buat variable dengan tipe string
         String strTax = tax.getText();
         // potong kalimat depan berdasarkan index, contoh:
         // T a x : <spasi> $ 3.20
@@ -69,4 +75,11 @@ public class OverviewPage {
         Float floatTotal = Float.parseFloat(potongString);
         return floatTotal;
     }
+
+
+    public void clickFinish(){
+        btnFinish.click();
+    }
+
+
 }

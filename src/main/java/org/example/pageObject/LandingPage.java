@@ -32,6 +32,15 @@ public class LandingPage {
     @FindBy(xpath = "//button[@id='add-to-cart-sauce-labs-fleece-jacket']")
     private WebElement jacket;
 
+    @FindBy(xpath = "//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']")
+    private WebElement tsred;
+
+    @FindBy(xpath = "//button[@id='add-to-cart-sauce-labs-onesie']")
+    private WebElement onesie;
+
+    @FindBy(xpath = "//button[@id='remove-test.allthethings()-t-shirt-(red)']")
+    private WebElement remove;
+
     public void cartButton() { // memanggil path buka atau klik cart
         cartButton.click();
     }
@@ -51,6 +60,14 @@ public class LandingPage {
 
     public void clickJacket() {  // memanggil path menambahkan produk ke cart
         jacket.click();
+    }
+
+    public void clickTsred() { tsred.click(); }
+
+    public void clickOnesie() { onesie.click(); }
+
+    public void clickRemove() { // memanggil path buka atau klik cart
+        remove.click();
     }
 
     public boolean verifyLandingPage() { // memastikan user berada di halaman landing page
