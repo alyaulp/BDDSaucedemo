@@ -11,7 +11,10 @@ public class Hooks {
     public static WebDriver webDriver;
 
     @Before
+
     public void openBrowser() {
+        String current = System.getProperty("user.dir");
+        System.out.println(current);
         System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY,
                 System.getProperty("user.dir") + "/driver/chromedriver.exe");
 

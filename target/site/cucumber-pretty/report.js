@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 47605856799,
+  "duration": 3459171500,
   "status": "passed"
 });
 formatter.scenario({
@@ -159,7 +159,7 @@ formatter.match({
   "location": "LoginSteps.verifyLogin()"
 });
 formatter.result({
-  "duration": 2557191500,
+  "duration": 460569100,
   "status": "passed"
 });
 formatter.match({
@@ -176,14 +176,14 @@ formatter.match({
   "location": "LoginSteps.inputCredential(String,String)"
 });
 formatter.result({
-  "duration": 2383080301,
+  "duration": 549598700,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.verifyLandingPage()"
 });
 formatter.result({
-  "duration": 131221000,
+  "duration": 50544000,
   "status": "passed"
 });
 formatter.match({
@@ -196,49 +196,49 @@ formatter.match({
   "location": "PurchaseSteps.sortProductValue(String)"
 });
 formatter.result({
-  "duration": 5790950500,
+  "duration": 5245757000,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.choiceBasketTwo()"
 });
 formatter.result({
-  "duration": 5945890699,
+  "duration": 5150831100,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.cartButton()"
 });
 formatter.result({
-  "duration": 5167558300,
+  "duration": 5105763100,
   "status": "passed"
 });
 formatter.match({
   "location": "PurchaseSteps.choiceRemove()"
 });
 formatter.result({
-  "duration": 5111661200,
+  "duration": 5082548200,
   "status": "passed"
 });
 formatter.match({
   "location": "CartSteps.verifyCartPage()"
 });
 formatter.result({
-  "duration": 107933999,
+  "duration": 34061500,
   "status": "passed"
 });
 formatter.match({
   "location": "CartSteps.checkoutButton()"
 });
 formatter.result({
-  "duration": 5302171500,
+  "duration": 5091283100,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutSteps.verifyCheckout()"
 });
 formatter.result({
-  "duration": 5180337599,
+  "duration": 5047497500,
   "status": "passed"
 });
 formatter.match({
@@ -259,39 +259,39 @@ formatter.match({
   "location": "CheckoutSteps.inputCredential(String,String,String)"
 });
 formatter.result({
-  "duration": 6093214200,
+  "duration": 5407480800,
   "status": "passed"
 });
 formatter.match({
   "location": "OverviewSteps.verifyOverview()"
 });
 formatter.result({
-  "duration": 5088774801,
+  "duration": 5043290600,
   "status": "passed"
 });
 formatter.match({
   "location": "OverviewSteps.verifyTotal()"
 });
 formatter.result({
-  "duration": 5337432601,
+  "duration": 5128770800,
   "status": "passed"
 });
 formatter.match({
   "location": "OverviewSteps.choiceFinish()"
 });
 formatter.result({
-  "duration": 5251339201,
+  "duration": 5095358700,
   "status": "passed"
 });
 formatter.match({
   "location": "CompleteSteps.verifyCompletePage()"
 });
 formatter.result({
-  "duration": 146470901,
+  "duration": 31153900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 7031495900,
+  "duration": 250205900,
   "status": "passed"
 });
 });
